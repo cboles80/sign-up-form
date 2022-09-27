@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse', noto roboto, sans;
+    src: url("./Norse-Bold.otf");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +10,13 @@
     font-family: noto roboto, sans;
 }
 
+body{
+    display: flex;
+}
+
 img{
-    display: block;
-    width: 40%;
     height: 100vh;
+}
+.logo-font{
+    font-family: Norse;
 }
