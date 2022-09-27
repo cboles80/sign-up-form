@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin - Sign-up Form</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="icon" href="img/odin-lined.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <img src="img\gabriel-tovar-unsplash.jpg" alt="">
-        <h1 class="logo-font">Odin</h1>
+        <img src="img/gabriel-tovar-unsplash.jpg" alt="">
+        <div class="logo">
+            <img src="img/odin-lined.png" class="img-logo" alt="">
+            <h1 class="logo-font">Odin</h1>
+        </div>
         <span class="img-credit">Photo by Gabriel Tovar on <a href="https://unsplash.com/photos/gds7eOIovz0">Unsplash</a></span>
     </header>
     <main>
@@ -43,9 +47,11 @@
                     <label for="password">CONFIRM PASSWORD</label>
                     <input type="password" id="password" name="password">
                 </div>
-                <button>Create Account</button>
-                <p class="log-in">Already have an account? <a href="#">Log in</a></p>
             </form>
+            <div class="btn-create">
+                <button>Create Account</button>
+            </div>
+            <p class="log-in">Already have an account? <a href="#">Log in</a></p>
         </section>
     </main>    
 </body>
