@@ -26,26 +26,18 @@ header{
     top: -55%;
     padding: 0.1em;
     background-color: hsla(0, 0%, 0%, 0.502);
-    color: #fafafa;
+    color: lightgray;
     font-size: 4ch;
-}
-
-.img-logo{
-
 }
 
 .img-credit{
     position: relative;
     top: -12%;
-    color: #fafafa;
-}
-
-h2{
-
+    color: lightgray;
 }
 
 main{
-    background-color: #fafafa;
+    background-color: lightgray;
 }
 
 .sec-top{
@@ -56,6 +48,10 @@ main{
 .sec-form{
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+h3{
+    padding-bottom: 1em;    
 }
 
 .sec-top,
@@ -71,6 +67,21 @@ h3,
     background-color: white;
 }
 
+.form-inputs div{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.form-inputs span{
+display: flex;
+flex-direction: column;
+}
+
+.form-inputs label{
+    font-size: 85%;
+}
+
 img{
     width: 100%;
     height: 100vh;
@@ -78,10 +89,6 @@ img{
 
 .logo-font{
     font-family: Norse;
-}
-
-.italic{
-    font-style: italic;
 }
 
 button{
