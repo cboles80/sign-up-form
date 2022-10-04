@@ -13,26 +13,28 @@
 </head>
 <body>
     <header>
-        <img src="img/gabriel-tovar-unsplash_600.jpg" alt="">
-        <div class="logo">
-            <img src="img/odin-lined.png" class="img-logo" alt="">
-            <h1 class="logo-font">Odin</h1>
-        </div>
-        <span class="img-credit">Photo by Gabriel Tovar on <a href="https://unsplash.com/photos/gds7eOIovz0">Unsplash</a></span>
+        <!-- <img src="img/gabriel-tovar-unsplash_600.jpg" alt="" class="img-hero"> -->
+            <div class="hero">
+                <div class="container-logo">
+                    <img src="img/odin-lined.png" class="img-logo" alt="">
+                    <h1 class="logo-font">Odin</h1>
+                </div>
+                <span class="img-credit">Photo by Gabriel Tovar on <a href="https://unsplash.com/photos/gds7eOIovz0">Unsplash</a></span>
+            </div>
     </header>
     <main>
         <section class="sec-top">
             <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> Sign up <i>now</i> to get started.</h2>
-            <h2>You <i>know</i> you want to.</h2>
+            <p class="slogan">You <i>know</i> you want to.</p>
         </section>
         <section class="sec-form">
             <form action="http://httpbin.org/post" method="post">
-                <h3>Let's do this!</h3>
-                <div class="form-inputs">
+                <p class="cta">Let's do this!</p>
+                <div class="form-inputs" required="required">
                     <div>
                         <span>
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" required>
                         </span>
                         <span>
                             <label for="last_name">LAST NAME</label>
@@ -47,7 +49,7 @@
                         </span>
                         <span>
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="number" id="phone_number" name="phone_number">
+                            <input type="tel" id="phone_number" name="phone_number">
                         </span>
                     </div>
 

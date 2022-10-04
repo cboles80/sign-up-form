@@ -14,6 +14,7 @@ body{
     display: grid;
     grid-template-columns: 0.75fr 1fr;
     margin: 0 10%;
+    /* height: 100vh; */
     background-color: #111;
 }
 
@@ -21,28 +22,49 @@ header{
     text-align: center;
 }
 
-.logo{
+.hero{
+    background-image: url(../img/gabriel-tovar-unsplash_600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 420px;
+    padding-bottom: 420px;
+}
+
+.container-logo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0.0725em;
     position: relative;
     top: -55%;
-    padding: 0.1em;
+    padding: 0.25em;
     background-color: hsla(0, 0%, 0%, 0.502);
-    color: lightgray;
-    font-size: 4ch;
+    color: #fafafa;
+    font-size: 3em;
+}
+
+.img-logo{
+    width: 75px;
+    height: auto;
+}
+
+.logo-font{
+    display: inline;
+    font-weight:lighter ;
 }
 
 .img-credit{
-    position: relative;
-    top: -12%;
-    color: lightgray;
+    /* position: relative; */
+    color: rgb(0, 0, 0);
 }
 
 main{
-    background-color: lightgray;
+    background-color: hsl(0, 0%, 93%);
 }
 
 .sec-top{
-    padding-top: 3em;
-    padding-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 4em;
 }
 
 .sec-form{
@@ -50,21 +72,29 @@ main{
     padding-bottom: 1em;
 }
 
-h3{
-    padding-bottom: 1em;    
+.slogan{
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .sec-top,
-h3,
+.cta,
 .form-inputs,
 .btn-create,
 .log-in{
     padding-left: 2em;
 }
 
-h3, 
+.cta, 
 .form-inputs{
     background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+span input{
+    font-size: 1.15em;
 }
 
 .form-inputs div{
@@ -74,17 +104,18 @@ h3,
 }
 
 .form-inputs span{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-inputs label{
-    font-size: 85%;
+    font-size: 65%;
+    letter-spacing: 0.2ch;
 }
 
-img{
+.img-hero{
     width: 100%;
-    height: 100vh;
+    height: 100vh
 }
 
 .logo-font{
@@ -99,4 +130,5 @@ button{
     border: none;
     border-radius: .4em;
     font-weight: 600;
+    cursor: pointer;
 }
