@@ -14,29 +14,40 @@ body{
     display: grid;
     grid-template-columns: 0.75fr 1fr;
     margin: 0 10%;
-    /* height: 100vh; */
+    min-height: 100vh;
     background-color: #111;
 }
 
 header{
-    text-align: center;
-}
-
-.hero{
+border: solid green 2px;
+    display: flex;
+    /* place-content: center; */
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
     background-image: url(../img/gabriel-tovar-unsplash_600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 420px;
-    padding-bottom: 420px;
+}
+
+/* .hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-content: center;
+    width: 100%;
+} */
+
+header div{
+    border: solid red 1px;
 }
 
 .container-logo{
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 0.0725em;
-    position: relative;
-    top: -55%;
+    width: 100%;
     padding: 0.25em;
     background-color: hsla(0, 0%, 0%, 0.502);
     color: #fafafa;
@@ -54,7 +65,11 @@ header{
 }
 
 .img-credit{
-    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
     color: rgb(0, 0, 0);
 }
 

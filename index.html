@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/odin-lined.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <!-- <img src="img/gabriel-tovar-unsplash_600.jpg" alt="" class="img-hero"> -->
-            <div class="hero">
-                <div class="container-logo">
-                    <img src="img/odin-lined.png" class="img-logo" alt="">
-                    <h1 class="logo-font">Odin</h1>
-                </div>
-                <span class="img-credit">Photo by Gabriel Tovar on <a href="https://unsplash.com/photos/gds7eOIovz0">Unsplash</a></span>
-            </div>
+        <div class="container-logo">
+            <img src="img/odin-lined.png" class="img-logo" height="150" alt="">
+            <h1 class="logo-font">Odin</h1>
+        </div>
+        <div class="img-credit">Photo by Gabriel Tovar on
+            <a href="https://unsplash.com/photos/gds7eOIovz0">Unsplash</a>
+        </div>
     </header>
     <main>
         <section class="sec-top">
-            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> Sign up <i>now</i> to get started.</h2>
+            <h2>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.<br> Sign up <i>now</i> to get started.</h2>
             <p class="slogan">You <i>know</i> you want to.</p>
         </section>
         <section class="sec-form">
             <form action="http://httpbin.org/post" method="post">
                 <p class="cta">Let's do this!</p>
-                <div class="form-inputs" required="required">
+                <div class="form-inputs">
                     <div>
                         <span>
                             <label for="first_name">FIRST NAME</label>
@@ -56,7 +58,7 @@
                     <div>
                         <span>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">    
+                            <input type="password" id="password" name="password">
                         </span>
                         <span>
                             <label for="c-password">CONFIRM PASSWORD</label>
@@ -70,6 +72,8 @@
             </form>
             <p class="log-in">Already have an account? <a href="#">Log in</a></p>
         </section>
-    </main>    
+    </main>
+    <script src="main.js">
+    </script>
 </body>
 </html>
